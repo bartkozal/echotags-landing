@@ -1,0 +1,120 @@
+{% comment %}
+INDEX
+
+div class="main-container"
+  div class="container text-center"
+    div class="brand"
+      = image_tag 'img-logo.png', width: 199
+      h2 class="margin-base-top"
+        | Discover new favorite places hands-free
+
+
+div class="container"
+
+  = render 'subscription_box', subscriber: @subscriber
+
+  div class="grid grid-middle margin-double-ends"
+    div class="grid-item 1/2 mobile-1/1"
+      h3
+        | An innovative way to travel
+      p
+        | Feeling lost and completely independent in a new city is great. Using
+          Echotags, you will get tailor-made information just for you, exactly
+          when it is useful. Our application uses geolocation to play you recorded
+          messages via your earbuds when you are close to an interesting object,
+          spot or location. You can download handmade sets, prepared by humans,
+          in advance and then use them during your trip. Everything takes place
+          offline, so you don't need to worry about your data plan.
+      ul class="list-inline"
+        li
+          span class="fa-stack fa-lg"
+            = link_to 'https://twitter.com/echotags' do
+              = fa_icon 'circle stack-2x'
+              = fa_icon 'twitter stack-1x inverse'
+        li
+          span class="fa-stack fa-lg"
+            = link_to 'https://facebook.com/echotagsapp' do
+              = fa_icon 'circle stack-2x'
+              = fa_icon 'facebook stack-1x inverse'
+        li
+          span class="fa-stack fa-lg"
+            = mail_to "hello@hellotags.io" do
+              = fa_icon 'circle stack-2x'
+              = fa_icon 'inbox stack-1x inverse'
+
+    div class="grid-item 1/2 mobile-1/1 text-center"
+      = image_tag 'img-echotags.jpg', class: 'img-responsive'
+
+  hr
+
+  div class="grid grid-middle margin-double-ends"
+    div class="grid-item 1/2 mobile-hidden text-center"
+      = image_tag 'img-zoom.jpg', class: 'img-responsive'
+    div class="grid-item 1/2 mobile-1/1"
+      h3
+        | Share tidbits about your favorite spots
+      p
+        | Echotags is not only about new places. Rediscover your surroundings
+          using the experiences of different people. You can play, save, record,
+          and share your audio tags with the whole world. Possibilities are almost
+          unlimited. Guidebooks, recommendations, voice journals, city exploring
+          games, re-emerging trips or leaving a message on the spot are just
+          a few examples. You can make them private, share with others for free
+          or sell them.
+
+  = render 'subscription_box', subscriber: @subscriber
+
+  div class="grid grid-center margin-double-ends"
+    div class="grid-item 1/2 tablet-1/1 mobile-1/1"
+      h3 class="text-center no-margin-top"
+        | Why are we doing this?
+      p
+        | Traveling is one of the most exciting human activities. We are travelers
+          too. We love to enjoy new places, explore cities, checking out where
+          the best food is or the most beautiful landmarks are. But there is one
+          major drawback which we personally hate; once you go to a new spot,
+          you usually buy a guidebook, check the Internet in advance or go to
+          a tourist information center. The problem is that you then have to
+          carry all those unhandy guidebooks. When you need them the most,
+          they are always inside a bag or a rucksack. Constantly checking out phones
+          or tablets is not a super convenient option either. You would just like to
+          experience new places, without any disturbances, wouldn't you?
+      p
+        | We make Echotags to deliver you audio insights, created by other
+          passionate people, which you can listen to during your trips. You can
+          freely choose topics that are interesting for you, and start enjoying
+          new places, hands-free, in a completely new way.
+      p class="text-right text-milli text-muted"
+        | - Bartłomiej &amp; Maciej
+{% endcomment %}
+
+
+{% comment %}
+SUBSCRIPTION BOX
+
+div class="box subscription-box margin-double-top"
+  = form_for subscriber, html: { class: 'form-inline margin-base-bottom' } do |f|
+    = f.label :email, "We are still in Beta. Enter your email and we'll put you on our invite list:"
+    div class="visible-inline tablet-visible-block"
+      = f.email_field :email, class: "1/5 tablet-1/2 mobile-4/5 margin-halve", placeholder: "i.e. mac@example.com"
+      div class="visible-inline tablet-visible-inline mobile-visible-block"
+        = f.submit "Get Early Access", class: "btn btn-positive mobile-4/5"
+{% endcomment %}
+
+
+{% comment %}
+THANK YOU
+
+div class="grid grid-center"
+  div class="grid-item 1/2 tablet-4/5 mobile-4/5 padding-double-ends"
+    div class="text-center"
+      h3
+        | Thank you for your interest! <br> We put you on the invite list. Take care!
+      p class="text-muted"
+        | Please consider following us on #{link_to "Twitter", "https://twitter.com/echotags"}
+          and/or #{link_to "Facebook", "https://facebook.com/echotagsapp"}
+          to get all updates.
+
+    p
+      = link_to "← Go back to the home page", root_path
+{% endcomment %}
