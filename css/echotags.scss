@@ -1,69 +1,78 @@
-// $font-leading: 1.5
-// $font-size-base: 18
-// $font-family-base: 'Roboto', sans-serif
+---
+---
 
-// $grid-container: 1280px
+$font-leading: 1.5;
+$font-size-base: 18;
+$font-family-base: 'Roboto', sans-serif;
 
-// $link-active: false
+$grid-container: 1280px;
 
-// $ui-extras: true
+$link-active: false;
 
-// $color-positive: #559113
-// $color-link: $color-positive
+$ui-extras: true;
 
-// $sticky-footer-height: 0
+$color-positive: #559113;
+$color-link: $color-positive;
 
-// $responsive-type: desktop-first
-// $responsive-map: (mobile: 600px, tablet: 601px 1175px)
+$sticky-footer-height: 0;
 
-// @import 'hocus-pocus/hocus-pocus'
-// @import 'font-awesome'
+$responsive-type: desktop-first;
+$responsive-map: (mobile: 600px, tablet: 601px 1175px);
 
-// h2, .h2
-//   @include font-size(48)
+@import "hocus-pocus/hocus-pocus";
 
-// h3, .h3
-//   @include font-size(30)
+h2, .h2 {
+  @include font-size(48);
+}
 
-// .btn
-//   border-bottom-width: 3px
-//   border-bottom-style: solid
-//   vertical-align: 2px
+h3, .h3 {
+  @include font-size(30);
+}
 
-// .btn-positive
-//   border-bottom-color: darken($color-positive, 10%)
+.btn {
+  border-bottom-width: 3px !important;
+  border-bottom-style: solid !important;
+  vertical-align: 1px !important;
+}
 
-// .text-muted
-//   color: $color-gray
+.btn-positive {
+  background-color: $color-positive !important;
+  border-bottom-color: darken($color-positive, 10%) !important;
+}
 
-// input,
-// textarea
-//   color: black
+.text-muted {
+  color: $color-gray;
+}
 
-// .field_with_errors,
-// .field_with_errors label
-//   display: inline
+input,
+textarea {
+  color: black;
+}
 
-// .main-container
-//   position: relative
-//   height: 50vw
-//   background-image: image-url('bg-main.jpg')
-//   background-size: contain
-//   background-position: center top
-//   background-repeat: no-repeat
-//   background-attachment: fixed
+.main-container {
+  position: relative;
+  height: 50vw;
+  background-image: url('/img/bg-main.jpg');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-// .brand
-//   position: absolute
-//   width: 100%
-//   left: 50%
-//   top: 50%
-//   transform: translate(-50%, -50%)
+.brand {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
-// .subscription-box
-//   padding: $spacing-unit
-//   background-color: #f6f6f6
-//   text-align: center
+.subscription-box {
+  padding: $spacing-unit;
+  background-color: #f6f6f6;
+  text-align: center;
+}
 
-// .img-responsive
-//   display: inline
+.img-responsive {
+  display: inline;
+}
