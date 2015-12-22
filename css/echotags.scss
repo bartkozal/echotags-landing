@@ -22,7 +22,7 @@ $responsive-map: (mobile: 600px, tablet: 601px 1175px);
 @import "hocus-pocus/hocus-pocus";
 
 h2, .h2 {
-  @include font-size(48);
+  @include font-size(44);
 }
 
 h3, .h3 {
@@ -51,12 +51,16 @@ textarea {
 
 .main-container {
   position: relative;
-  height: 50vw;
+  height: 100vh;
   background-image: url('/img/bg-main.jpg');
-  background-size: contain;
-  background-position: center top;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
+
+  .brand {
+    padding: $spacing-unit;
+  }
 }
 
 .brand {
