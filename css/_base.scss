@@ -1,0 +1,29 @@
+.hero {
+  // TODO: Remove after a release of new Hocus-Pocus version
+  flex-direction: column;
+}
+
+.box-subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  padding-top: halve($spacing-unit);
+  padding-bottom: halve($spacing-unit);
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+}
+
+.form-subscription {
+  [type=email] {
+    margin-right: halve($spacing-unit);
+    margin-left: halve($spacing-unit);
+    padding-top: halve($spacing-unit);
+    padding-bottom: halve($spacing-unit);
+  }
+
+  [type=submit] {
+    padding: halve($spacing-unit) $spacing-unit;
+  }
+}

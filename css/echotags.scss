@@ -1,17 +1,8 @@
 ---
 ---
 
-@import "hocus-pocus/hocus-pocus";
-
-$font-leading: 1.4;
-$font-size-base: 18;
-
-$font-family-base: 'Roboto', sans-serif;
-
-$rwd-type: desktop-first;
-
-#mc_embed_signup {
-  input.mce_inline_error {
-    border-color: $color-negative !important;
-  }
-}
+@import 'hocus-pocus/scss/colors';
+@import '../css/defaults';
+@import 'hocus-pocus/hocus-pocus';
+@import '../css/base';
+@import '../css/vendor';
