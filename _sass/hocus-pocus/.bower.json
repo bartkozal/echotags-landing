@@ -1,11 +1,11 @@
 {
   "name": "hocus-pocus",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "http://hocus-pocus.io",
   "authors": [
     "Bartlomiej Kozal <bkzl@me.com>"
   ],
-  "description": "Design-free Sass micro framework",
+  "description": "Design-free Sass framework",
   "main": "hocus-pocus.scss",
   "keywords": [
     "css",
@@ -24,14 +24,13 @@
     ".codeclimate.yml",
     ".scss-lint.yml"
   ],
-  "_release": "0.2.3",
+  "_release": "0.2.4",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.3",
-    "commit": "5696428b3682bbf0f2c6611293ce8ec170dc6dbb"
+    "tag": "v0.2.4",
+    "commit": "a2e6aa1e55f329e8961b6716cb51820eab4df770"
   },
   "_source": "git://github.com/bkzl/hocus-pocus.git",
   "_target": "~0.2.3",
-  "_originalSource": "hocus-pocus",
-  "_direct": true
+  "_originalSource": "hocus-pocus"
 }
