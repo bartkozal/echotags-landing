@@ -44,6 +44,7 @@ $color-btn: $color-blue;
     margin-left: halve($spacing-unit);
     padding-top: halve($spacing-unit);
     padding-bottom: halve($spacing-unit);
+    color: $color-black;
   }
 
   [type=submit] {
