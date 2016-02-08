@@ -5,24 +5,50 @@
 
 $font-leading: 1.4;
 $font-size-base: 18;
-
 $font-family-base: 'Roboto', sans-serif;
 $font-weight-headings: 400;
-
 $rwd-type: desktop-first;
 $rwd-map: (
   'mobile': 620px,
-  'tablet': 1024px
+  'tablet': 1040px
 );
 
 $hero-img: '/img/bg-hero.jpg';
 $hero-size: 85;
-
 $grid-container: 85vw;
-
 $color-btn: $color-blue;
 
 @import 'hocus-pocus/hocus-pocus';
+
+.hero {
+  background-attachment: scroll;
+}
+
+.hero-strip {
+  width: 100%;
+  padding-top: double($spacing-unit);
+  padding-bottom: double($spacing-unit);
+  background-color: rgba($color-white, .8);
+}
+
+.img-strip {
+  height: 50vh;
+  background-position: 100% 100%;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.img-strip-nyc {
+  background-image: url('/img/img-nyc.jpg');
+}
+
+.img-strip-cairo {
+  background-image: url('/img/img-cairo.jpg');
+}
+
+.img-strip-bejing {
+  background-image: url('/img/img-bejing.jpg');
+}
 
 .box-subscription {
   display: flex;
@@ -61,6 +87,10 @@ $color-btn: $color-blue;
     height: 75vh;
   }
 
+  .img-strip {
+    height: 40vh;
+  }
+
   .box-subscription {
     height: 25vh;
   }
@@ -68,7 +98,9 @@ $color-btn: $color-blue;
 
 @include rwd('mobile') {
   h1 {
-    @include font-size(42);
+    @include font-size(36);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -78,6 +110,12 @@ $color-btn: $color-blue;
 
   .hero {
     height: 60vh;
+  }
+
+  .hero-strip {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
   }
 
   .box-subscription {
