@@ -2,7 +2,90 @@
 ---
 
 @import 'hocus-pocus/scss/colors';
-@import 'defaults';
+
+$font-leading: 1.4;
+$font-size-base: 18;
+
+$font-family-base: 'Roboto', sans-serif;
+$font-weight-headings: 400;
+
+$rwd-type: desktop-first;
+$rwd-map: (
+  'mobile': 620px,
+  'tablet': 1024px
+);
+
+$hero-img: '/img/bg-hero.jpg';
+$hero-size: 85;
+
+$grid-container: 85vw;
+
+$color-btn: $color-blue;
+
 @import 'hocus-pocus/hocus-pocus';
-@import 'base';
-@import 'vendor';
+
+.box-subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  padding-top: halve($spacing-unit);
+  padding-bottom: halve($spacing-unit);
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+}
+
+.form-subscription {
+  width: 100%;
+
+  [type=email] {
+    margin-right: halve($spacing-unit);
+    margin-left: halve($spacing-unit);
+    padding-top: halve($spacing-unit);
+    padding-bottom: halve($spacing-unit);
+  }
+
+  [type=submit] {
+    padding: halve($spacing-unit) $spacing-unit;
+  }
+}
+
+@include rwd('tablet') {
+  .container {
+    max-width: 95vw;
+  }
+
+  .hero {
+    height: 75vh;
+  }
+
+  .box-subscription {
+    height: 25vh;
+  }
+}
+
+@include rwd('mobile') {
+  h1 {
+    @include font-size(42);
+  }
+
+  h2 {
+    @include font-size(32);
+    text-align: center;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .box-subscription {
+    height: 40vh;
+  }
+}
+
+#mc_embed_signup {
+  input.mce_inline_error {
+    border-color: $color-negative !important;
+  }
+}
