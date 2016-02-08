@@ -10,7 +10,7 @@ $font-weight-headings: 400;
 $rwd-type: desktop-first;
 $rwd-map: (
   'mobile': 620px,
-  'tablet': 1040px
+  'tablet': 1080px
 );
 
 $hero-img: '/img/bg-hero.jpg';
@@ -33,7 +33,7 @@ $color-btn: $color-blue;
 
 .img-strip {
   height: 50vh;
-  background-position: 100% 100%;
+  background-position: 100% 70%;
   background-size: cover;
   background-attachment: scroll;
 }
