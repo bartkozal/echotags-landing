@@ -11,6 +11,8 @@
 }
 
 .form-subscription {
+  width: 100%;
+
   [type=email] {
     margin-right: halve($spacing-unit);
     margin-left: halve($spacing-unit);
@@ -20,5 +22,38 @@
 
   [type=submit] {
     padding: halve($spacing-unit) $spacing-unit;
+  }
+}
+
+@include rwd('tablet') {
+  .container {
+    max-width: 95vw;
+  }
+
+  .hero {
+    height: 75vh;
+  }
+
+  .box-subscription {
+    height: 25vh;
+  }
+}
+
+@include rwd('mobile') {
+  h1 {
+    @include font-size(42);
+  }
+
+  h2 {
+    @include font-size(32);
+    text-align: center;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .box-subscription {
+    height: 40vh;
   }
 }

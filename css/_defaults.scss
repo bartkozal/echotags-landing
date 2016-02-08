@@ -5,6 +5,10 @@ $font-family-base: 'Roboto', sans-serif;
 $font-weight-headings: 400;
 
 $rwd-type: desktop-first;
+$rwd-map: (
+  'mobile': 620px,
+  'tablet': 1024px
+);
 
 $hero-img: '/img/bg-hero.jpg';
 $hero-size: 85;

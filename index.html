@@ -13,7 +13,7 @@ layout: default
 
 <div class="container margin-double-bottom">
   <div class="grid grid-middle">
-    <div class="grid-item 1/2">
+    <div class="grid-item 1/2 mobile-1/1">
       <h2 class="no-margin-top">An innovative way to travel</h2>
       <p>
         Feeling lost and completely independent in a new city is great. Using
@@ -55,20 +55,24 @@ layout: default
       </ul>
     </div>
 
-    <div class="grid-item 1/2 text-center">
-      <img class="img-responsive" src="/img/img-echotags.jpg" alt="echotags">
+    <div class="grid-item 1/2 mobile-hidden text-center">
+      <img class="img-responsive img-strip" src="/img/img-echotags.jpg" alt="echotags">
     </div>
   </div>
 </div>
 
-<img class="img-responsive margin-double-bottom" src="/img/img-nyc.jpg" alt="New York City Image">
+<div class="grid grid-center margin-double-bottom">
+  <div class="grid-item">
+    <img class="img-responsive img-strip" src="/img/img-nyc.jpg" alt="New York City Image">
+  </div>
+</div>
 
 <div class="container margin-double-bottom">
   <div class="grid grid-middle">
-    <div class="grid-item 1/2 text-center">
+    <div class="grid-item 1/2 mobile-1/1 mobile-margin-bottom text-center">
       <img class="img-responsive" src="/img/img-iphone.png" alt="Phone Mockup">
     </div>
-    <div class="grid-item 1/2">
+    <div class="grid-item 1/2 mobile-1/1">
       <h2 class="no-margin-top">Share tidbits about your favorite spots</h2>
       <p>
         Echotags is not only about new places. Rediscover your surroundings
@@ -85,7 +89,11 @@ layout: default
 
 {% include form.html %}
 
-<img class="img-responsive margin-double-bottom" src="/img/img-cairo.jpg" alt="Cairo Image">
+<div class="grid grid-center margin-double-bottom">
+  <div class="grid-item">
+    <img class="img-responsive img-strip" src="/img/img-cairo.jpg" alt="Cairo Image">
+  </div>
+</div>
 
 <div class="container margin-double-bottom">
   <h2 class="no-margin-top">Why are we doing this?</h2>
@@ -116,4 +124,8 @@ layout: default
 
 {% include form.html %}
 
-<img class="img-responsive" src="/img/img-bejing.jpg" alt="Bejing Image">
+<div class="grid grid-center">
+  <div class="grid-item">
+    <img class="img-responsive" src="/img/img-bejing.jpg" alt="Bejing Image">
+  </div>
+</div>
