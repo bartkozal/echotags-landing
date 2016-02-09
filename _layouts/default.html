@@ -5,16 +5,30 @@
     <meta name="google-site-verification" content="QlwHDvO0xjf36wtvwX3fG-TSyC0EK2ZRhDky9vP6c-0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <meta property="og:url" content="http://echotags.io">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Echotags">
+    <meta property="og:description" content="Discover new favorite places hands-free">
+    <meta property="og:image" content="http://echotags.io/img/img-echotags.jpg">
+
     <title>Echotags - discover new favorite places hands-free</title>
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/echotags.css">
   </head>
 
   <body>
     {{ content }}
 
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <script type="text/javascript">
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
       analytics.load("EIxdZ7raGeDhboi5EdicWdPeBmLDRPxr");
