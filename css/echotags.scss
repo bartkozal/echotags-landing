@@ -76,6 +76,10 @@ $color-btn: $color-blue;
   [type=submit] {
     padding: halve($spacing-unit) $spacing-unit;
   }
+
+  a {
+    color: $color-aqua;
+  }
 }
 
 @include rwd('tablet') {
@@ -109,7 +113,7 @@ $color-btn: $color-blue;
   }
 
   .hero {
-    height: 60vh;
+    height: 55vh;
   }
 
   .hero-strip {
@@ -119,7 +123,8 @@ $color-btn: $color-blue;
   }
 
   .box-subscription {
-    height: 40vh;
+    @include font-size(15);
+    height: 45vh;
   }
 }
 

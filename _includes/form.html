@@ -1,5 +1,6 @@
 <div class="box box-subscription">
-  <form class="form-inline form-subscription" accept-charset="UTF-8" action="https://formkeep.com/f/573fedf79fcb" method="POST">
+  <form class="form-inline form-subscription" accept-charset="UTF-8"
+    action="https://formkeep.com/f/573fedf79fcb" method="POST">
     <div class="mobile-no-margin-right">
       <div class="inline-block tablet-block margin-right tablet-no-margin-right tablet-margin-half-bottom">
         <label for="email">
@@ -9,9 +10,18 @@
 
       <div class="grid grid-center inline mobile-block mobile-margin-half-right">
         <input type="hidden" name="utf8" value="✓">
-        <input class="grid-item inline mobile-1/1 mobile-margin-half-bottom" type="email" placeholder="i.e. mac@example.com" id="email" name="email" required>
-        <input class="grid-item inline mobile-1/1 mobile-margin-half-sides" type="submit" value="Get Early Access">
+        <input class="grid-item inline mobile-1/1 mobile-margin-half-bottom"
+          type="email" placeholder="i.e. mac@example.com" id="email"
+          name="email" required>
+          <input class="grid-item inline mobile-1/1 mobile-margin-half-sides"
+            type="submit" value="Get Early Access">
       </div>
+
+      {% unless include.hide-link %}
+        <p class="text-center margin-top no-margin-bottom">
+          Are you not convinced? <a href="/newsletter">See how our emails look.</a> We send comics!
+        </p>
+      {% endunless %}
     </div>
   </form>
 </div>
