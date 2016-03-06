@@ -14,7 +14,7 @@ $rwd-map: (
 );
 
 $hero-img: '/img/bg-hero.jpg';
-$hero-size: 85;
+$hero-size: 80;
 $grid-container: 85vw;
 $color-btn: $color-blue;
 
@@ -54,7 +54,7 @@ $color-btn: $color-blue;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15vh;
+  height: 20vh;
   padding-top: halve($spacing-unit);
   padding-bottom: halve($spacing-unit);
   background-color: $color-black;
