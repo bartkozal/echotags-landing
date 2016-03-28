@@ -20,10 +20,6 @@ $color-btn: $color-blue;
 
 @import 'hocus-pocus/hocus-pocus';
 
-.hero {
-  background-attachment: scroll;
-}
-
 .hero-strip {
   width: 100%;
   padding-top: double($spacing-unit);
@@ -55,8 +51,6 @@ $color-btn: $color-blue;
   align-items: center;
   justify-content: center;
   height: 20vh;
-  padding-top: halve($spacing-unit);
-  padding-bottom: halve($spacing-unit);
   background-color: $color-black;
   color: $color-white;
   text-align: center;
@@ -78,7 +72,7 @@ $color-btn: $color-blue;
   }
 
   a {
-    color: $color-aqua;
+    color: lighten($color-blue, 30%);
   }
 }
 

@@ -1,27 +1,24 @@
 <div class="box box-subscription">
-  <form class="form-inline form-subscription" accept-charset="UTF-8"
+  <form class="form-stacked form-subscription" accept-charset="UTF-8"
     action="https://formkeep.com/f/573fedf79fcb" method="POST">
-    <div class="mobile-no-margin-right">
-      <div class="inline-block tablet-block margin-right tablet-no-margin-right tablet-margin-half-bottom">
-        <label for="email">
-          We are still in Beta. Enter your email and we'll put you on our invite list:
-        </label>
-      </div>
 
-      <div class="grid grid-center inline mobile-block mobile-margin-half-right">
-        <input type="hidden" name="utf8" value="✓">
-        <input class="grid-item inline mobile-1/1 mobile-margin-half-bottom"
-          type="email" placeholder="i.e. mac@example.com" id="email"
-          name="email" required>
-          <input class="grid-item inline mobile-1/1 mobile-margin-half-sides"
-            type="submit" value="Get Early Access">
-      </div>
+    <label class="margin-bottom" for="email">
+      We are still building the app. Enter your email and we put you
+      on the invite list:
+    </label>
 
-      {% unless include.hide-link %}
-        <p class="text-center margin-top no-margin-bottom">
-          Are you not convinced? <a href="/newsletter">See how our emails look.</a> We send comics!
-        </p>
-      {% endunless %}
+    <div class="grid grid-center margin-bottom">
+      <input type="hidden" name="utf8" value="✓">
+      <input class="grid-item inline mobile-1/1"
+        type="email" placeholder="i.e. mac@example.com" id="email"
+        name="email" required>
+      <input class="grid-item inline mobile-1/1 mobile-margin-half"
+        type="submit" value="Get Early Access">
     </div>
+
+    <p class="no-margin-bottom">
+      To keep you up to date once for a while
+      <a href="/newsletter">you'll get a comic like this</a>.
+    </p>
   </form>
 </div>
