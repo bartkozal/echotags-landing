@@ -17,6 +17,7 @@ input {
   cursor: pointer;
 }
 
+input,
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -32,7 +33,7 @@ input[type="radio"],
 input[type="checkbox"] {
   position: relative;
   bottom: 1px;
-  margin-right: quarter($spacing-unit);
+  margin-right: halve($spacing-unit);
   vertical-align: middle;
 }
 
@@ -78,12 +79,18 @@ input[disabled] {
       @include ui-padding;
 
       display: inline-block;
+      width: 25%;
       margin: 0;
       text-align: right;
     }
   }
 
-  .grid-item > .form-item > label {
-    padding-left: 0;
+  .form-group {
+    margin-left: 25%;
+    padding-left: quarter($spacing-unit);
+
+    > label {
+      margin-bottom: $spacing-unit;
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "hocus-pocus",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "homepage": "http://hocus-pocus.io",
   "authors": [
     "Bartlomiej Kozal <bkzl@me.com>"
@@ -24,11 +24,11 @@
     ".codeclimate.yml",
     ".scss-lint.yml"
   ],
-  "_release": "0.2.4",
+  "_release": "0.2.6",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.4",
-    "commit": "a2e6aa1e55f329e8961b6716cb51820eab4df770"
+    "tag": "v0.2.6",
+    "commit": "58d4cea542db32535ee5973db014742897233114"
   },
   "_source": "git://github.com/bkzl/hocus-pocus.git",
   "_target": "~0.2.3",
