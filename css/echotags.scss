@@ -69,16 +69,6 @@ blockquote {
     right: 1rem;
     content: "”";
   }
-
-  @include rwd('mobile') {
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
-
-    &:before,
-    &:after {
-      display: none;
-    }
-  }
 }
 
 .btn,
@@ -100,10 +90,6 @@ input[type=email] {
 
 .btn-social {
   @include font-size(15);
-  @include rwd('mobile') {
-    display: block;
-    margin-bottom: halve($spacing-unit);
-  }
 }
 
 .wrapper-primary {
@@ -117,22 +103,10 @@ input[type=email] {
   > .container {
     position: relative;
     height: $header-height;
-
-    @include rwd('mobile') {
-      height: auto;
-    }
   }
 
   .text-lead {
     color: rgba($color-white, .5);
-
-    @include rwd('mobile') {
-      @include font-size(16);
-    }
-  }
-
-  @include rwd('mobile') {
-    height: auto;
   }
 }
 
@@ -153,8 +127,61 @@ input[type=email] {
   top: 50%;
   width: 50%;
   transform: translateY(-50%);
+}
 
-  @include rwd('mobile') {
+.blockquotes {
+  margin-top: double($spacing-unit) * -1;
+}
+
+.img-iphone {
+  position: absolute;
+  top: 65px;
+  right: 110px;
+}
+
+@include rwd('tablet') {
+  .blockquotes {
+    margin-top: $spacing-unit * -1;
+  }
+
+  .img-iphone {
+    right: 20px;
+  }
+}
+
+@include rwd('mobile') {
+  blockquote {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .wrapper-primary {
+    height: auto;
+
+    > .container {
+      height: auto;
+    }
+
+    .text-lead {
+      @include font-size(16);
+    }
+  }
+
+  .blockquotes {
+    margin-top: 0;
+  }
+
+  .btn-social {
+    display: block;
+    margin-bottom: halve($spacing-unit);
+  }
+
+  .cell {
     position: static;
     top: auto;
     width: auto;
@@ -163,24 +190,8 @@ input[type=email] {
   }
 }
 
-.blockquotes {
-  margin-top: double($spacing-unit) * -1;
-
-  @include rwd('tablet') {
-    margin-top: $spacing-unit * -1;
-  }
-
-  @include rwd('mobile') {
-    margin-top: 0;
-  }
-}
-
-.img-iphone {
-  position: absolute;
-  top: 65px;
-  right: 110px;
-
-  @include rwd('tablet') {
-    right: 20px;
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .wrapper-primary {
+    background-image: url('/img/bg-header@2x.png'), url('/img/bg-header-left@2x.png'), url('/img/bg-header-right@2x.png');
   }
 }
