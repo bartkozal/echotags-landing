@@ -33,9 +33,9 @@ $header-height: 700px;
 
 @import 'hocus-pocus/hocus-pocus';
 
-@include btn('twitter', #55ACEE);
-@include btn('facebook', #3B5998);
-@include btn('instagram', #3F729B);
+@include btn('twitter', #55acee);
+@include btn('facebook', #3b5998);
+@include btn('instagram', #3f729b);
 
 html {
   box-shadow: inset 0 -5px 0 0 $color-brand;
@@ -68,6 +68,16 @@ blockquote {
     bottom: -1rem;
     right: 1rem;
     content: "”";
+  }
+
+  @include rwd('mobile') {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+
+    &:before,
+    &:after {
+      display: none;
+    }
   }
 }
 
@@ -114,7 +124,11 @@ input[type=email] {
   }
 
   .text-lead {
-    color: rgba($color-white, .5)
+    color: rgba($color-white, .5);
+
+    @include rwd('mobile') {
+      @include font-size(16);
+    }
   }
 
   @include rwd('mobile') {
@@ -134,7 +148,7 @@ input[type=email] {
   background-color: $color-brand;
 }
 
-.cell-primary {
+.cell {
   position: absolute;
   top: 50%;
   width: 50%;
