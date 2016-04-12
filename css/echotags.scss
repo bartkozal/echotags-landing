@@ -93,10 +93,10 @@ input[type=email] {
 }
 
 .wrapper-primary {
-  background-image: url('/img/bg-header.png'), url('/img/bg-header-left.png'), url('/img/bg-header-right.png');
-  background-position: top center, top left, top right;
+  background-image: url('/img/bg-header.jpg');
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto, 50% $header-height, 50% $header-height;
+  background-size: cover;
   height: $header-height;
   color: $color-white;
 
@@ -106,7 +106,7 @@ input[type=email] {
   }
 
   .text-lead {
-    color: rgba($color-white, .5);
+    color: rgba($color-white, .7);
   }
 }
 
@@ -191,7 +191,7 @@ input[type=email] {
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
-  .wrapper-primary {
-    background-image: url('/img/bg-header@2x.png'), url('/img/bg-header-left@2x.png'), url('/img/bg-header-right@2x.png');
-  }
+  // .wrapper-primary {
+  //   background-image: url('/img/bg-header@2x.png'), url('/img/bg-header-left@2x.png'), url('/img/bg-header-right@2x.png');
+  // }
 }
