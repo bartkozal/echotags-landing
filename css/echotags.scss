@@ -139,8 +139,8 @@ input[type=email] {
 
 .img-iphone {
   position: absolute;
-  top: 65px;
-  right: 110px;
+  top: 50px;
+  right: 85px;
 }
 
 @include rwd('tablet') {
@@ -149,7 +149,7 @@ input[type=email] {
   }
 
   .img-iphone {
-    right: 20px;
+    right: 10px;
   }
 }
 
