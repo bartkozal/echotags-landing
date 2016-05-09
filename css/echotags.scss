@@ -149,6 +149,10 @@ input[type=email] {
   right: 95px;
 }
 
+.img-border {
+  border: 1px solid $color-white;
+}
+
 .wrapper-share {
   position: absolute;
   bottom: halve($spacing-unit);
