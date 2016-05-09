@@ -31,7 +31,7 @@ layout: default
 
       {% include form.html %}
 
-      <p class="text-small margin-top no-margin-bottom mobile-padding-bottom">
+      <p class="text-small margin-top no-margin-bottom mobile-padding-double-bottom">
         To keep you up to date once for a while you'll
         <a class="text-positive" href="/newsletter">receive a comic</a>.
         <br>
@@ -39,7 +39,11 @@ layout: default
       </p>
     </div>
 
-    <img class="img-iphone img-resposnive mobile-hidden" src="/img/img-iphone.png" srcset="/img/img-iphone@2x.png 2x" alt="Home Screen Screenshot">
+    <div class="wrapper-share">
+      {% include share.html %}
+    </div>
+
+    <img class="img-iphone img-responsive mobile-hidden" src="/img/img-iphone.png" srcset="/img/img-iphone@2x.png 2x" alt="Home Screen Screenshot">
   </div>
 </div>
 
@@ -160,20 +164,23 @@ layout: default
 
     <ul class="list-inline margin-double-bottom">
       <li>
-        <a class="btn btn-twitter btn-outline btn-social" href="https://twitter.com/echotags">
-          Follow on Twitter
+        <a class="btn btn-facebook btn-outline btn-social" href="https://www.facebook.com/echotagsapp">
+          <i class="ion-social-facebook"></i>
+          /echotagsapp
         </a>
       </li>
 
       <li>
-        <a class="btn btn-facebook btn-outline btn-social" href="https://www.facebook.com/echotagsapp">
-          Follow on Facebook
+        <a class="btn btn-twitter btn-outline btn-social" href="https://twitter.com/echotags">
+          <i class="ion-social-twitter"></i>
+          @echotags
         </a>
       </li>
 
       <li>
         <a class="btn btn-instagram btn-outline btn-social" href="https://www.instagram.com/echotags">
-          Follow on Instagram
+          <i class="ion-social-instagram-outline"></i>
+          echotags
         </a>
       </li>
     </ul>

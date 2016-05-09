@@ -85,11 +85,17 @@ input[type=email] {
 }
 
 .btn-outline {
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .btn-social {
   @include font-size(15);
+
+  [class*="ion"] {
+    @include font-size(24);
+    vertical-align: -3px;
+    margin-right: quarter($spacing-unit);
+  }
 }
 
 .text-subheading {
@@ -141,6 +147,16 @@ input[type=email] {
   position: absolute;
   top: 60px;
   right: 95px;
+}
+
+.wrapper-share {
+  position: absolute;
+  bottom: halve($spacing-unit);
+  left: $spacing-unit;
+}
+
+.twitter-share-button {
+  vertical-align: bottom;
 }
 
 @include rwd('tablet') {
