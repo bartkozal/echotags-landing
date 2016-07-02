@@ -1,6 +1,7 @@
 $color-ui: $color-silver !default;
 $color-btn: $color-black !default;
-$color-font: $color-black !default;
+$color-text: $color-black !default;
+$color-font: $color-text !default;
 $color-link: $color-blue !default;
 $color-muted: $color-gray !default;
 $color-disabled: $color-ui !default;
@@ -50,6 +51,7 @@ $font-size-micro: 11 !default;
 $font-size-small: 13 !default;
 $font-size-base: 15 !default;
 $font-size-lead: 18 !default;
+$font-size-btn: $font-size-base !default;
 
 $font-size-h1: $font-size-base !default;
 $font-size-h2: $font-size-base !default;
@@ -86,6 +88,7 @@ $grid-gutter: $spacing-unit !default;
 $ui-border-radius: 4px !default;
 $ui-padding-vertical: quarter($spacing-unit) !default;
 $ui-padding-horizontal: halve($spacing-unit) !default;
+$ui-padding-vertical-ratio: .4 !default;
 
 $list-menu-color: $color-white !default;
 $list-menu-background: $color-link !default;
