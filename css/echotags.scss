@@ -38,10 +38,6 @@ $header-height: 710px;
 @include btn('instagram', #3f729b);
 @include btn('email', $color-brand);
 
-html {
-  box-shadow: inset 0 -5px 0 0 $color-brand;
-}
-
 blockquote {
   @include font-size(17);
   position: relative;
