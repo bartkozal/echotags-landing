@@ -53,12 +53,42 @@ layout: default
         <h3 class="h2 no-margin-top margin-half-bottom">
           Discover the city of Amsterdam
         </h3>
-        <p class="no-margin-bottom">
+
+        <p>
           Echotags is very simple to use. Launch the app, turn on discovery mode
           and... that's all, it works. There is no need to buy guidebooks,
           check the Internet in advance or go to a tourist information center.
           It's a perfect solution for solo travelers and short time visitors.
         </p>
+
+        <div class="media media-half media-middle audio">
+          <i class="audio-control ion-play"></i>
+
+          <div class="media-body">
+            Click to hear the sample
+          </div>
+
+          <audio src="sample.m4a"></audio>
+          <script type="text/javascript">
+            var audio = document.querySelector("audio");
+            var playButton = document.querySelector(".audio");
+            var controlButton = document.querySelector(".audio-control");
+
+            var playSample = function() {
+              if (audio.paused) {
+                audio.play();
+                controlButton.classList.remove("ion-play");
+                controlButton.classList.add("ion-pause");
+              } else {
+                audio.pause();
+                controlButton.classList.remove("ion-pause");
+                controlButton.classList.add("ion-play");
+              }
+            };
+
+            playButton.addEventListener("click", playSample);
+          </script>
+        </div>
       </div>
     </div>
   </div>
