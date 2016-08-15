@@ -1,13 +1,10 @@
 ---
 ---
 
-$color-brand: #414345;
 $color-font: #333;
-
 $color-secondary: #f5f5f5;
-
 $color-link: #4a90e2;
-$color-positive: #ffef7f;
+$color-audio: $color-link;
 
 $font-family-base: "Lato", sans-serif;
 $font-family-headings: "Roboto", "Lato", sans-serif;
@@ -36,7 +33,6 @@ $header-height: 710px;
 @include btn('twitter', #55acee);
 @include btn('facebook', #3b5998);
 @include btn('instagram', #3f729b);
-@include btn('email', $color-brand);
 
 blockquote {
   @include font-size(17);
@@ -126,7 +122,7 @@ input[type=email] {
 }
 
 .wrapper-form {
-  background-color: $color-brand;
+  background-color: $color-link;
 }
 
 .cell {
@@ -227,7 +223,7 @@ input[type=email] {
 }
 
 .audio {
-  color: rgba($color-font, .8);
+  color: $color-audio;
   cursor: pointer;
 }
 
@@ -236,7 +232,7 @@ input[type=email] {
   height: double($spacing-unit);
   display: block;
   position: relative;
-  border: 2px solid rgba($color-font, .8);
+  border: 2px solid $color-audio;
   border-radius: 50%;
   font-size: 30px;
 
