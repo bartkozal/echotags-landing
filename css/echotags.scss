@@ -116,13 +116,15 @@ blockquote {
 
 .blockquote-author {
   color: $color-brand;
-  font-style: normal;
   text-align: right;
 }
 
 .link-twitter {
+  display: inline-block;
   text-decoration: none;
   color: $color-twitter;
+  position: relative;
+  z-index: 10;
 }
 
 .img-iphone {
