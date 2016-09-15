@@ -8,6 +8,7 @@ $color-secondary: #f5f5f5;
 
 $color-link: #4a90e2;
 $color-positive: #ffef7f;
+$color-twitter: #55acee;
 
 $font-family-base: "Lato", sans-serif;
 $font-family-headings: "Roboto", "Lato", sans-serif;
@@ -32,11 +33,6 @@ $blockquote-background: #f7f7f7;
 $header-height: 710px;
 
 @import 'hocus-pocus/hocus-pocus';
-
-@include btn('twitter', #55acee);
-@include btn('facebook', #3b5998);
-@include btn('instagram', #3f729b);
-@include btn('email', $color-brand);
 
 blockquote {
   @include font-size(17);
@@ -65,33 +61,6 @@ blockquote {
     bottom: -1rem;
     right: 1rem;
     content: "”";
-  }
-}
-
-.btn,
-input[type=submit] {
-  @include font-size(17);
-  padding: $ui-padding-vertical $ui-padding-horizontal;
-}
-
-input[type=email] {
-  @include font-size(17);
-  border: 0;
-  padding: $ui-padding-vertical;
-  color: $color-font;
-}
-
-.btn-outline {
-  border-width: 1px;
-}
-
-.btn-social {
-  @include font-size(15);
-
-  [class*="ion"] {
-    @include font-size(24);
-    vertical-align: -3px;
-    margin-right: quarter($spacing-unit);
   }
 }
 
@@ -125,8 +94,13 @@ input[type=email] {
   }
 }
 
-.wrapper-form {
+.wrapper-banner {
   background-color: $color-brand;
+  color: $color-secondary;
+
+  a {
+    color: $color-positive;
+  }
 }
 
 .cell {
@@ -138,6 +112,17 @@ input[type=email] {
 
 .blockquotes {
   margin-top: double($spacing-unit) * -1;
+}
+
+.blockquote-author {
+  color: $color-brand;
+  font-style: normal;
+  text-align: right;
+}
+
+.link-twitter {
+  text-decoration: none;
+  color: $color-twitter;
 }
 
 .img-iphone {
@@ -195,11 +180,6 @@ input[type=email] {
 
   .blockquotes {
     margin-top: 0;
-  }
-
-  .btn-social {
-    display: block;
-    margin-bottom: halve($spacing-unit);
   }
 
   .cell {
